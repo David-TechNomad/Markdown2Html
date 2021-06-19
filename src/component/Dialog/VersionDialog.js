@@ -44,7 +44,7 @@ class VersionDialog extends Component {
       const data = {
         versionId: 1,
         versionNumber: "1.0.0",
-        versionTimeline: ["2020-09-09 优化排版", "2020-09-08 fork自markdown nice"],
+        versionTimeline: ["2021-06-18 优化排版", "2021-06-19 fork自markdown nice"],
         recommend: {
           link: "https://github.com/dsh225",
           mainInfo: "欢迎关注我的Github",
