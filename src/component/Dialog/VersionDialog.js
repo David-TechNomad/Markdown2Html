@@ -31,12 +31,12 @@ class VersionDialog extends Component {
 
   handleMore = () => {
     const w = window.open("about:blank");
-    w.location.href = "https://github.com/mdnice/markdown-nice/blob/master/CHANGELOG.md";
+    w.location.href = "https://github.com/dsh225/mardown2html";
   };
 
   handleDocs = () => {
     const w = window.open("about:blank");
-    w.location.href = "https://aizhuanqian.online/mardown2html";
+    w.location.href = "https://github.com/dsh225/mardown2html";
   };
 
   componentDidMount = async () => {
@@ -46,11 +46,11 @@ class VersionDialog extends Component {
         versionNumber: "1.0.0",
         versionTimeline: ["2020-09-09 优化排版", "2020-09-08 fork自markdown nice"],
         recommend: {
-          link: "https://www.aizhuanqian.com",
-          mainInfo: "欢迎关注我的博客",
+          link: "https://github.com/dsh225",
+          mainInfo: "欢迎关注我的Github",
         },
         specialInfo:
-          '<div style="display:flex;justify-content:center;align-items:center;"><img style="width:50%;" src="http://md.aizhuanqian.online/img/wechat_qr.df324554.jpeg"/></div>',
+          '<div style="display:flex;justify-content:center;align-items:center;"><img style="width:50%;" src="https://dsh225.github.io/introduction-to-front-end-engineering/assets/img/wx.31bece9c.jpeg"/></div>',
       };
       const newestVersion = localStorage.getItem(NEWEST_VERSION);
       if (data.versionNumber !== newestVersion) {
@@ -95,11 +95,11 @@ class VersionDialog extends Component {
               id="nice-version-dialog-doc"
               style={{fontWeight: "bold"}}
               alt=""
-              href="https://aizhuanqian.online/mardown2html"
+              href="https://github.com/dsh225/mardown2html"
               rel="noopener noreferrer"
               target="_blank"
             >
-              用户与开发者文档
+              mardown2html
             </a>
           </Timeline.Item>
           {this.state.recommend && (
